@@ -1,0 +1,9 @@
+extend layout
+block content
+  p
+    each product in products
+        li
+            a(href='/product/' + product.id + '/' + key)
+                img(src=product.image)
+                p
+                    =product.title
